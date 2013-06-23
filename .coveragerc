@@ -1,7 +1,7 @@
 # .coveragerc to control coverage.py
 [run]
 branch = True
-source = rdflib
+source = rdflib,build/src/rdflib
 #omit = */site-packages/*
 
 [report]
