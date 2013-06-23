@@ -2,7 +2,7 @@
 [run]
 branch = True
 source = rdflib
-omit = */site-packages/*
+#omit = */site-packages/*
 
 [report]
 # Regexes for lines to exclude from consideration
@@ -22,8 +22,8 @@ exclude_lines =
     if 0:
     if __name__ == .__main__.:
 
-[paths]
-source =
-    rdflib
-    build/src/rdflib
+#[paths]
+#source =
+#    rdflib
+#    build/src/rdflib
 
