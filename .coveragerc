@@ -1,7 +1,6 @@
 # .coveragerc to control coverage.py
 [run]
 branch = True
-source = rdflib,build/src/rdflib
 #omit = */site-packages/*
 
 [report]
@@ -23,7 +22,7 @@ exclude_lines =
     if __name__ == .__main__.:
 
 #[paths]
-#source =
-#    rdflib
-#    build/src/rdflib
+source =
+    rdflib
+    build/src/rdflib
 
