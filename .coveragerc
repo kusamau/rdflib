@@ -22,14 +22,14 @@ exclude_lines =
     if 0:
     if __name__ == .__main__.:
 
-# path mappings for the py3 environments
+# path mappings for the py3 environments (doesn't seem to work on coveralls yet)
 [paths]
 source =
-    rdflib
-    build/src/rdflib
+    rdflib/
+    build/src/rdflib/
 tests =
-    test
-    build/src/test
+    test/
+    build/src/test/
 examples =
-    examples
-    build/src/examples
+    examples/
+    build/src/examples/
