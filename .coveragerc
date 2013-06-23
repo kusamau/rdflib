@@ -1,7 +1,8 @@
 # .coveragerc to control coverage.py
 [run]
 branch = True
-#omit = */site-packages/*
+#source = rdflib,build/src/rdflib # specified in .travis.yml for different envs
+omit = */site-packages/*
 
 [report]
 # Regexes for lines to exclude from consideration
@@ -21,8 +22,14 @@ exclude_lines =
     if 0:
     if __name__ == .__main__.:
 
-#[paths]
+# path mappings for the py3 environments
+[paths]
 source =
     rdflib
     build/src/rdflib
-
+tests =
+    test
+    build/src/test
+examples =
+    examples
+    build/src/examples
